@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8M2VT4HJ4H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8M2VT4HJ4H');
+</script>
+      <meta name="description" content="ANS Segurança eletrônica">
+    <meta name="keywords" content="cameras, alaemres, sensores, cerca eletrica, cerca infra-vermelho e muito mais">
+    <meta name="author" content="Abner Jezrrel">
+     <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fconsteltelecom.com.br%2Fsite%2Fprodutos%2F1-cameras-de-seguranca.html&psig=AOvVaw2ICS35y_RqILjWGeY2Dnid&ust=1735095313156000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiX9PCzv4oDFQAAAAAdAAAAABAZ" />
+      
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="https://share.creavite.co/65a4705ca5496cfa0604f07a.gif" type="image/gif">
+    <meta name="theme-color" content="#222"> 
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANS Segurança Eletrônica</title>
+
+     <audio src="Technology_Edit02.wav" autoplay muted></audio>
+    <style>
+
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .loader-container {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #09166b, #ffffff, #000000);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 2s forwards;
+        }
+
+        .loader {
+            width: 300px;
+            background: #ffffff00;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 20px rgb(0, 0, 0);
+            display: none;
+            transition: 2s;
+        }
+.loader:hover {
+    transition: 2s;
+    box-shadow: 0 0 20px rgb(252, 252, 252);
+}
+        .progress-bar-container {
+            width: 100%;
+            background: #eeeeee00;
+            border-radius: 5px;
+            margin: 15px 0;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 20px;
+            border-radius: 5px;
+            background: #1b06705b;
+            width: 0;
+            transition: width 0.3s; /* Adiciona uma transição suave */
+        }
+
+        .percentage-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000000cb;
+            font-weight: bold;
+        }
+
+        .redirect-button {
+            background: #ff000000;
+            color: #000000;
+            padding: 10px 20px;
+            box-shadow: 0 0 20px rgb(0, 0, 0);
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .loader img{
+            box-shadow: 0 0 20px rgb(0, 0, 0);
+            border-radius: 15px;
+            background-color: #ff000000;
+            width: 300px;
+            height: 200px;
+      
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="loader-container">
+        <div class="loader">
+            <img src="Imagem do WhatsApp de 2024-12-23 à(s) 23.01.42_90ddf1ed.jpg" alt="" id="lg"" alt="">
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+                <div class="percentage-text">0%</div>
+            </div>
+            <button class="redirect-button" onclick="redirectToAnotherPage()">Continuar</button>
+        </div>
+    </div>
+
+    <script>
+        let progressBar = document.querySelector(".progress-bar");
+        let percentageText = document.querySelector(".percentage-text");
+        let loader = document.querySelector(".loader");
+
+        function redirectToAnotherPage() {
+            // Redirecionar para a outra página
+            window.location.href = "1.html";
+        }
+
+        function simulateLoading() {
+            let width = 0;
+            let interval = setInterval(function () {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    // Quando atingir 100%, mostrar o botão
+                    loader.style.display = "block";
+                } else {
+                    width++;
+                    progressBar.style.width = width + "%";
+                    percentageText.innerText = width + "%";
+                }
+            }, 20);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Garante um tempo mínimo de carregamento de 1 segundo
+            setTimeout(function () {
+                simulateLoading();
+            }, 1000);
+        });
+
+        // Atualiza a largura da barra de progresso conforme a página é carregada
+        document.onreadystatechange = function () {
+            let loadingPercentage = Math.floor((document.readyState / 4) * 100);
+            progressBar.style.width = loadingPercentage + "%";
+            percentageText.innerText = loadingPercentage + "%";
+        };
+    </script>
+</body>
+</html>
